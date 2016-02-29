@@ -1,0 +1,275 @@
+$p-c: #262626; //primary-color
+
+//FONTS
+@font-face {
+	font-family: 'MuseoSansCyrl';
+	src: url('../fonts/Museo-Sans-Cyrl/MuseoSansCyrl.otf');
+}
+
+@font-face {
+	font-family: 'MuseoSansCyrlBold';
+	src: url('../fonts/Museo-Sans-Cyrl/MuseoSansCyrl_0.otf');
+}
+
+@font-face {
+	font-family: 'MuseoSansCyrlBolder';
+	src: url('../fonts/Museo-Sans-Cyrl/MuseoSansCyrl_1.otf');
+}
+
+@font-face {
+	font-family: 'MuseoSansCyrlBoldest';
+	src: url('../fonts/Museo-Sans-Cyrl/MuseoSansCyrl_2.otf');
+}
+
+//GLOBAL
+body {
+	font-family: 'MuseoSansCyrl', sans-serif;
+	font-weight: 100;
+	font-size: 15px;
+	color: $p-c;
+	letter-spacing: 1.5px;
+	line-height: 1.5;
+}
+
+a, a:hover {
+	text-decoration: none;
+	color: $p-c;
+}
+
+h1,h2 {
+	text-transform: uppercase;
+	text-align: center;
+	color: #000;
+	font-weight: 100;
+}
+
+h1 {
+	font-size: 60px;
+	margin: 0;
+	line-height: 1;
+}
+
+h2 {
+	font-size: 22px;
+}
+
+h3 {
+	font-family: 'Playfair Display', serif;
+	font-weight: 300;
+	font-size: 33px;
+}
+
+h4 {
+	font-size: 20px;
+	text-align: center;
+	margin-top: 75px;
+}
+
+h5 {
+	font-family: 'MuseoSansCyrlBold';
+	font-size: 15px;
+	margin: 0;
+	margin-bottom: 15px;
+}
+
+h6 {
+	text-transform: uppercase;
+	font-family: 'MuseoSansCyrlBold';
+	margin: 0;
+}
+
+section {
+	padding-bottom: 63px;
+}
+
+p {
+	margin: 0;
+}
+
+
+.main {
+	margin-top: 100px;
+}
+
+// SECTION-1
+.section-1 {
+	article {
+		margin-top: 80px;
+	}
+}
+
+// SECTION-2
+.section-2 {
+	.section-2__right {
+		margin-top: 60px;
+		margin-bottom: 60px;
+	}
+	.img--wrap {
+		text-align: left;
+	}
+	article {
+		margin-bottom: 30px;
+	}
+	.section-2__bottom {
+		margin-right: 100px;
+	}
+}
+
+// SECTION-3
+.section-3 {
+
+	.section-3__right {
+		margin-top: 60px;
+		margin-bottom: 60px;
+	}
+	article:first-child {
+		margin-bottom: 30px;
+	}
+}
+
+// SECTION-4 (CAROUSEL)
+.section-4 h3 {
+	margin-left: 33px;
+}
+#owl-example {
+	h6, p {
+		text-align: center;
+		font-size: 19px;
+		color: #000;
+	}
+}
+
+.owl-theme .owl-controls .owl-page span {
+	width: 7px;
+	height: 7px;
+	background: #252525;
+}
+
+//FOOTER
+.footer {
+	border-top: 1px solid #e5e5e5;
+	padding-top: 117px;
+
+	h3, h4, p {
+		text-align: center;
+	}
+	h4 {
+		text-transform: uppercase;
+		font-family: 'MuseoSansCyrlBolder';
+		font-weight: 500;
+		margin-bottom: 10px;
+	}
+	.contact {
+		h4 {
+			margin-top: 40px;
+		}
+	}
+	.new-collection {
+		content: " ";
+		clear: both;
+		display: table;
+		padding-left: 52px;
+		border-left: 1px solid #e5e5e5;
+		border-right: 1px solid #e5e5e5;
+		.new-collection__image {
+			position: relative;
+			bottom: 55px;
+		}
+		h3 {
+			line-height: 1.357;
+			margin-bottom: 10px;
+			margin-top: 0;
+		}
+	}
+	.delivery {
+		content: " ";
+		clear: both;
+		margin: 0 50px 40px;
+		h4 {
+			margin-top: 0;
+		}
+		p {
+			font-size: 12px;
+		}
+	}
+	form {
+		text-align: center;
+		input {
+			height: 63px;
+			letter-spacing: 2px;
+			font-size: 20px;
+		}
+		input[type="email"] {
+			padding-left: 2.3em;
+			padding-right: 2.3em;
+			color: #5f5f5f;
+			width: 69%;
+			max-width: 218px;
+			margin-right: -5px;
+		}
+		input[type="submit"] {
+			width: 30%;
+			max-width: 99px;
+			background-color: #e7d9db;
+			color: #302f2f;
+			font-family: 'MuseoSansCyrlBolder';
+			text-transform: uppercase;
+			border: none;
+		}
+	}
+
+	.footer__bottom {
+		padding-top: 63px;
+	}
+	.copyright {
+		color: #9f9f9f;
+		font-size: 20px;
+		line-height: 3.15;
+	}
+	.nav {
+		float: right;
+		margin-left: 15px;
+		ul {
+			padding: 0;
+			li {
+				display: inline-block;
+				margin-right: 25px;
+				&:last-child {
+					margin-right: 0;
+				}
+				a {
+					color: #9f9f9f;
+					font-size: 20px;
+					&:hover {
+						color: darken(#9f9f9f, 20%)
+					}
+				}
+			}
+		}
+	}
+}
+
+// SHARE (SOCIAL) BUTTONS
+.share {
+	margin-top: 70px;
+	a {
+		background: url('../img/Share.png') no-repeat;
+		width: 20px;
+		height: 13px;
+		display: inline-block;
+		list-style-type: none;
+		margin-right: 17px;
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+	.share__facebook {
+		background-position: 6px 0;
+	}
+	.share__vk {
+		background-position: -27px 0;
+	}
+	.share__google {
+		background-position: -63px 0;
+	}
+}
