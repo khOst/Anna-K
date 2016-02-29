@@ -55,6 +55,9 @@
 }
 
 @media screen and (max-width: 768px) {
+  section {
+    padding-bottom: 63px;
+  }
   h3 {
     font-size: 28px;
   }
@@ -79,6 +82,15 @@
   }
   .section-2 .section-2__bottom {
     margin-right: 0;
+  }
+  .section-4 {
+    padding-bottom: 30px;
+  }
+  .footer {
+    padding-top: 30px;
+  }
+  .footer .contact {
+    margin-bottom: 20px;
   }
 }
 

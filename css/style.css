@@ -161,11 +161,6 @@ p {
   border-right: 1px solid #e5e5e5;
 }
 
-.footer .new-collection .new-collection__image {
-  position: relative;
-  bottom: 55px;
-}
-
 .footer .new-collection h3 {
   line-height: 1.357;
   margin-bottom: 10px;
